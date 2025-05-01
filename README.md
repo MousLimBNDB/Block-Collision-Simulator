@@ -66,7 +66,7 @@ BCS/
 ├── BCSv3/
 │   ├── block_collision_sim.py
 │   └── simulation_interface.py
-├── BCSv4/
+├── BCSv4/               # Last version
 │   ├── block_collision_sim.py
 │   └── simulation_interface.py
 ├── requirements.txt     # Python dependencies
