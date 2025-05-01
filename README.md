@@ -1,41 +1,85 @@
+# Block Collision Simulation (BCS)
 
-## Features of the Simulation
+A Python-based physics simulation that visualizes elastic collisions between two blocks using Pygame and Tkinter. Comes with a GUI to control parameters and observe real-time effects.
 
-1. **Tkinter Control Panel**:
-    - Input parameters for both blocks (mass, velocity, position)
-    - Adjust physics parameters (elasticity, gravity, time rate)
-    - Toggle display options (center of mass, velocity vectors)
-    - Preset scenarios for common experiments
-    - Buttons to start, reset, and apply changes to the simulation
-2. **Pygame Visualization**:
-    - Real-time visualization of the blocks with proper sizing based on mass
-    - Velocity vectors showing direction and magnitude
-    - Center of mass tracking (optional)
-    - Status display showing time, collisions, and block properties
-    - Keyboard controls (space to pause, r to reset, c to toggle CM, v to toggle vectors)
-3. **Physics Features**:
-    - Perfectly elastic collisions with adjustable elasticity
-    - Conservation of momentum and energy
-    - Adjustable time rate to speed up or slow down the simulation
-    - Wall collisions with adjustable damping
-    - Support for gravity (can be set to zero)
+---
 
-## How to Run the Simulation
+## 🛠 Features
 
-1. Make sure you have Python installed along with Pygame and Tkinter
-2. Save the code to a file (e.g., `block_collision.py`)
-3. Run the script: `python block_collision.py`
-4. Use the Tkinter interface to set your parameters and click "Start Simulation"
+- Accurate elastic collision physics
+- Toggle display options: center of mass, velocity vectors, and trajectories
+- GUI for configuring block properties and environment settings
+- Preset scenarios for quick demonstrations
+- Pause, reset, and reload features
 
-## Preset Scenarios
+---
 
-I've included some interesting preset scenarios:
+## 📦 Requirements
 
-1. **Equal Masses**: Two equal mass blocks, one moving toward a stationary one
-2. **Light vs Heavy**: A light block hitting a heavy stationary block
-3. **Pi Approximation**: Setup to demonstrate how block collisions can calculate π
-4. **Wall Collisions**: Both blocks moving with wall collisions enabled
+- Python 3.8 or higher
+- Pygame (Tkinter is included in Python)
 
-## Try It Out!
+### Install with pip:
+```bash
+pip install -r requirements.txt
+```
 
-The simulation allows you to recreate various physics experiments. For example, try the "Pi Approximation" preset - if you count the number of collisions between the blocks and the wall when the mass ratio is 100:1, it will approach π!
+---
+
+## 🚀 How to Run
+
+1. Open a terminal and navigate to the project folder.
+2. Start the control panel (GUI):
+
+```bash
+python simulation_interface.py
+```
+
+3. Use the GUI to:
+   - Set masses, velocities, and other physics parameters
+   - Start, pause, or reset the simulation
+   - Choose display options (vectors, trajectories, center of mass)
+
+4. The simulation will open in a separate Pygame window.
+
+---
+
+## 🎮 Controls in the Simulation Window
+
+| Key     | Action                        |
+|---------|-------------------------------|
+| Space   | Pause / Resume simulation     |
+| R       | Reset simulation              |
+| C       | Toggle center of mass display |
+| V       | Toggle velocity vectors       |
+| T       | Toggle trajectories           |
+| Esc     | Exit simulation               |
+
+---
+
+## 🗂 Project Structure
+
+```
+BCS/
+├── BCS.py               # Basic script version
+├── BCSv2.py             # Improved version
+├── BCSv3/
+│   ├── block_collision_sim.py
+│   └── simulation_interface.py
+├── BCSv4/
+│   ├── block_collision_sim.py
+│   └── simulation_interface.py
+├── requirements.txt     # Python dependencies
+└── README.md            # This file
+```
+
+---
+
+## 📄 License
+
+This project is released under the **MIT License**.
+
+Feel free to use, modify, and share it.
+```
+
+Let me know if you want to include screenshots or GIFs of the simulation!
